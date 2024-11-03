@@ -11,7 +11,7 @@ func main() {
 	r.GET("admin/news", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "news.html", gin.H{
 			"title": "首页",
-			"newt": []interface{}{},
+			"newt":  []interface{}{},
 		})
 	})
 	r.Run()
