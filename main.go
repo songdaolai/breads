@@ -11,7 +11,7 @@ func main() {
 	r.LoadHTMLGlob("templates/**/*")
 	r.GET("admin/news", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "news.html", gin.H{
-			"title": "首页",
+			"title": "首页222",
 			"newt":  []interface{}{},
 		})
 	})
