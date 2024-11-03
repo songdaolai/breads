@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>{{.title}}</p>
-<p>{{.but}}</p>
-<br>
-<br>
- <ul>
-{{range $key,$value:=.newt}}
- <li>{{$key}}---{{$value.Put}}---{{$value.Pht}}</li>
-{{end}}
-</ul>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body>
+        <p>{{.title}}</p>
+        <p>{{.but}}</p>
 
-</body>
+        <br />
+        <br />
+        <ul>
+            {{range $key,$value:=.newt}}
+            <li>{{$key}}---{{$value.Put}}---{{$value.Pht}}</li>
+            {{end}}
+        </ul>
+    </body>
 </html>

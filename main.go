@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 type act struct {
-	put string
-	pht string
+	Put string
+	Pht string
 }
 
 func main() {
@@ -18,8 +19,8 @@ func main() {
 			"title": "首页",
 			"newt": []interface{}{
 				&act{
-					put: "新闻标题111",
-					pht: "新闻标题222",
+					Put: "新闻标题111",
+					Pht: "新闻标题222",
 				},
 			},
 		})
