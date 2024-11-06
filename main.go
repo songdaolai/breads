@@ -23,6 +23,7 @@ func main() {
 		"Prithee": Prithen,
 	})
 	r.LoadHTMLGlob("templates/**/*")
+	r.Static("/css", "./static/css")
 	r.GET("admin/news", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "news.html", gin.H{
 			"title": "首页",
@@ -32,7 +33,7 @@ func main() {
 				Pht: "新闻标题333",
 			},
 		})
-	})
 
+	})
 	r.Run()
 }
